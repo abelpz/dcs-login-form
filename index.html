@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="bg-gray-950 w-full h-screen flex justify-center items-center flex-col gap-10 text-white">
+      <h1 class="text-3xl font-bold">
+        Inicio de sesión
+      </h1>
+      <div id="login-card" class="bg-gray-800 p-6 rounded-lg">
+        <div class="flex flex-col gap-7 w-80">
+          <div class="flex flex-col">
+          <label for="nombre">Nombre de usuario:</label>
+          <input type="text" id="nombre" name="nombre" class="bg-gray-600"/>
+          </div>
+          <div class="flex flex-col">
+          <label for="clave">Contraseña:</label>
+          <input type="password" id="clave" name="clave" class="bg-gray-600" />
+          </div>
+          <button id="button-login" class="bg-blue-800 p-2 rounded-md">Iniciar sesión</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
